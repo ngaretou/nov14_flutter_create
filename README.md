@@ -1,16 +1,11 @@
-# nov14_flutter_create
+This is for troubleshooting a problem with archiving a macOS build in Xcode. 
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+What's been done here so far: 
+- Flutter: New Project in VS Code
+- 'flutter pub add shared_preferences'
+- Run in VS Code - runs great
+- 'flutter build macos'
+- Now in Xcode open the Runner.xcodeproj in the macos folder
+- Product/Archive or Product/Analyze
+- Brings the 'no such module' error on 'shared_preferences_macos' in GeneratedPluginRegistrant in the Flutter folder inside the xcodeproj
+- Also tried with url_launcher and same result. 
